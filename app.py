@@ -37,10 +37,6 @@ st.markdown('<div class="bigheader">🚀 AI-Enhanced Instagram Intelligence</div
 # Use Streamlit secrets for API key
 API_KEY = st.secrets.get("RAPIDAPI_KEY")
 
-st.write("DEBUG - Secrets keys found:", list(st.secrets.keys()))
-st.write("DEBUG - RAPIDAPI_KEY value:", API_KEY)
-
-
 if not API_KEY:
     st.error('RAPIDAPI_KEY not set! Add it to .streamlit/secrets.toml or Streamlit Cloud secrets.')
     st.stop()
@@ -294,4 +290,5 @@ if st.button("Analyze"):
     st.download_button("⬇ Export Excel", data=out.getvalue(), file_name="insta_results.xlsx")
 
     st.balloons()
+
 

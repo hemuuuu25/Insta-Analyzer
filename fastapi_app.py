@@ -3,10 +3,11 @@ import requests
 import os
 import numpy as np
 from sklearn.linear_model import LinearRegression
+import streamlit as st
 
 app = FastAPI(title="Insta-Analyzer API")
 
-API_KEY = os.environ.get("RAPIDAPI_KEY")
+API_KEY = st.secrets.get("RAPIDAPI_KEY")
 BASE_URL = "https://instagram-scraper-20251.p.rapidapi.com"
 
 

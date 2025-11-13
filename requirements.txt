@@ -8,3 +8,5 @@ openpyxl
 textblob
 wordcloud
 matplotlib
+fastapi
+uvicorn

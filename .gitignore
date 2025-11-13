@@ -1,6 +1,35 @@
+# Virtual environment
 venv/
+
+# Python cache
 __pycache__/
-*.pyc
+*.py[cod]
+
+# Jupyter / IPython
+.ipynb_checkpoints
+
+# VSCode / IDE
+.vscode/
+*.code-workspace
+
+# OS files
 .DS_Store
+Thumbs.db
+
+# Python testing / coverage
 .pytest_cache/
+.coverage
+
+# Environment variables
 .env
+*.env
+
+# Logs
+*.log
+
+# Streamlit cache
+.streamlit/
+
+# VSCode extensions
+.history/
+
